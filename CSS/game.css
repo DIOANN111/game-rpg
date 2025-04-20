@@ -1,0 +1,249 @@
+/* game.php */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pipboy-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+
+.pipboy-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #333;
+    border-bottom: 2px solid #00ff00;
+}
+
+.pipboy-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.pipboy-time {
+    font-size: 18px;
+}
+
+.pipboy-nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00ff00;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    color: #222;
+    background-color: #00ff00;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.new-message-notification a {
+    background-color: green; /* Зеленый цвет фона */
+    color: white; /* Белый цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругленные углы */
+    display: inline-block; /* Делает ссылку блочным элементом */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.new-message-notification a:hover {
+    background-color: darkgreen; /* Темно-зеленый цвет при наведении */
+}
+
+.pipboy-screen {
+    padding: 20px;
+    text-align: center;
+}
+
+.pipboy-screen h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.game-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid #00ff00;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+}
+
+.game-description {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.game-button {
+    display: inline-block;
+    background-color: #00ff00;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.game-button:hover {
+    background-color: #222;
+    color: #00ff00;
+}
+
+.pipboy-footer {
+    background-color: #333;
+    padding: 15px;
+    border-top: 2px solid #00ff00;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-left {
+    color: #a0a0a0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-left a, .footer-right a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+
+.npc-list, .items-list {
+    margin-top: 30px;
+}
+
+.npc-item, .item {
+    background-color: #444;
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.npc-button, .chat-button, .back, .description-button {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 90%;
+    text-align: left;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+.direction-button {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 25%;
+    text-align: left;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.npc-button:hover, .direction-button:hover, .chat-button:hover, .back:hover, .description-button:hover {
+    background-color: #00ff00;
+    color: #222;
+}
+
+.back {
+    display: block;
+    margin-top: 30px;
+}
+
+.chat-button {
+    margin-top: 30px;
+}
+.online-players a {
+    text-align: right;
+    color: #00ff00;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+    border: 2px solid #d2691e;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    display: inline-block; /* чтобы ссылка занимала всю ширину родительского элемента */
+    width: 95%; /* делаем ширину 100%, чтобы она растягивалась по всей строке */
+}
+.heal-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.heal-button:hover {
+    background-color: darkgreen;
+}
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+

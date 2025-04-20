@@ -1,0 +1,81 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #00ff00;
+    background-color: #333;
+    color: #00ff00;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff00;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+    color: #00ff00;
+}
+
+.message {
+    color: #ff0000;
+    text-align: center;
+}
+
+.neighboring-locations {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.neighboring-locations h2 {
+    text-align: center;
+    color: #00ff00;
+}
+
+.neighboring-locations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.neighboring-locations li {
+    color: #00ff00;
+    padding: 5px 0;
+}
